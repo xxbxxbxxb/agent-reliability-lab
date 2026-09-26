@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790399802488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790399802488,
+            "name": "Commit-0",
+            "content": "# Python\r\n__pycache__/\r\n*.py[cod]\r\n*.egg-info/\r\n\r\n# Virtual environments\r\n.venv/\r\nvenv/\r\nenv/\r\n\r\n# Pytest / coverage\r\n.pytest_cache/\r\n.coverage\r\nhtmlcov/\r\n\r\n# IDE\r\n.idea/\r\n.vscode/\r\n\r\n# Environment variables / secrets\r\n.env\r\n.env.*\r\n!.env.example\r\n\r\n# OS\r\n.DS_Store\r\nThumbs.db"
+        }
+    ]
+}
