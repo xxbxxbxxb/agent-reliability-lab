@@ -35,8 +35,10 @@ class Run(BaseModel):
     agent_id: str
     task_id: str
     status:RunStatus = RunStatus.PENDING
-    stared_at: datetime | None=None
-    
+    started_at: datetime | None=None
+    ended_at: datetime | None=None
+    parent_run_id: str | None = None
+    metadata: dict[str, Any] = Field(default_factory=dict)
 class Step(BaseModel):
     step_id: str
     run_id: str
@@ -50,7 +52,7 @@ class TraceEvent(BaseModel):
     run_id: str
     step_id: str |None = None
     event_type: str
-    occured_at: datetime = Field(default_factory=utc_now)
+    occurred_at: datetime = Field(default_factory=utc_now)
     attributes: dict[str,Any] = Field(default_factory=dict)
 
 class Failure(BaseModel):
