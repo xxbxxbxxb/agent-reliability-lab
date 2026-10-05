@@ -54,4 +54,19 @@ async def test_in_memory_trace_sink_preserves_event_order() ->None:
         "run.started",
         "run.succeeded",
     ]
-    
+def test_run_metadata_is_not_shared() -> None:
+    run1 = Run(
+        run_id="run-1",
+        agent_id="react",
+        task_id="task-1",
+    )
+
+    run2 = Run(
+        run_id="run-2",
+        agent_id="react",
+        task_id="task-2",
+    )
+
+    run1.metadata["source"] = "experiment"
+
+    assert "source" not in run2.metadata
