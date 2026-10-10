@@ -1,4 +1,3 @@
-import pytest
 
 from agent_reliability.domain.models import (
     RunStatus,
