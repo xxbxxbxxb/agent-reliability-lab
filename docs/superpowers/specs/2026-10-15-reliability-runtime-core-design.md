@@ -2,7 +2,9 @@
 
 日期：2026-10-15
 
-状态：DRAFT_FOR_USER_REVIEW；等待本书面设计评审后再写实施计划
+状态：APPROVED_FOR_IMPLEMENTATION_PLANNING
+
+批准记录：用户于 2026-10-15 北京时间回复“按设计继续”；下一步评审详细实施计划及执行方式。
 
 总体设计：`2026-10-15-agent-reliability-lab-mature-v1-design.md`
 
